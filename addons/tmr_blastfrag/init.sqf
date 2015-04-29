@@ -131,7 +131,6 @@ tmr_blastfrag_fnc_createFrags = {
 		};
 		
 		_dir = [(random 2) - 1, (random 2) - 1, _z];
-
 		_frag setVelocity ([_dir, _fragV] call BIS_fnc_vectorMultiply);
 	};
 };
@@ -236,6 +235,9 @@ tmr_blastfrag_fnc_firedEH = {
 			_casualtyRadius = getNumber (configFile >> "CfgAmmo" >> _ammoType >> "tmr_blastfrag_casualtyRadius");
 			_size = getText (configFile >> "CfgAmmo" >> _ammoType >> "tmr_blastfrag_fragMaxSize");
 			_pattern = getText (configFile >> "CfgAmmo" >> _ammoType >> "tmr_blastfrag_fragPattern");
+			_liveTime = getNumber (configFile >> "CfgAmmo" >> _ammoType >> "tmr_blastfrag_liveTime");
+
+			_timeInit = diag_tickTime;
 
 			// Create some default values if not all were provided
 			if (_v == 0) then {
@@ -247,11 +249,11 @@ tmr_blastfrag_fnc_firedEH = {
 			if (_count == 0) then {_count = 30};
 			if (_casualtyRadius == 0) then {_casualtyRadius = (getNumber (configFile >> "CfgAmmo" >> _ammoType >> "indirectHit")) / 2};
 			if (_size == "") then {_size = "light"};
-			if (_pattern == "") then {_size = "sphere"};
+			if (_pattern == "") then {_pattern = "sphere"};
 		}, 
 		/* On exit, do...*/
 		{
-			if (!alive _round) then {
+			if (!alive _round && (_liveTime==0 || _timeInit+_liveTime>diag_tickTime) && missionNamespace getVariable ["WMT_pub_frzState", 100]>=3) then {
 				[_pos, _v, _count, _casualtyRadius, _size, _pattern] call tmr_blastfrag_fnc_createFrags;
 			};
 		}, 
@@ -260,7 +262,7 @@ tmr_blastfrag_fnc_firedEH = {
 		/* Exit condition */
 		{!alive _round || {_vCheck && {(velocity _round call bis_fnc_magnitude) == 0}}}, 
 		/* Private variables */
-		["_round", "_initialPos", "_weaponType", "_pos", "_v", "_count", "_casualtyRadius", "_size", "_pattern"]
+		["_round", "_initialPos", "_weaponType", "_pos", "_v", "_count", "_casualtyRadius", "_size", "_pattern", "_liveTime", "_timeInit"]
 		] call cba_common_fnc_addPerFrameHandlerLogic;
 	};
 };

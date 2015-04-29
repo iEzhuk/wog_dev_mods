@@ -25,7 +25,7 @@ class CfgPatches {
 class cfgAmmo {
     class rhs_B_9x19_7N21;
     class TMR_TinyFrag : rhs_B_9x19_7N21 {
-        model = "";
+        model = "\A3\Weapons_f\empty";
         tracerstarttime = 0;
         airfriction = -0.008;
         deflecting = 45;
@@ -34,7 +34,7 @@ class cfgAmmo {
         };
     class rhs_B_545x39_Ball;    
     class TMR_LightFrag : rhs_B_545x39_Ball {
-        model = "";
+        model = "\A3\Weapons_f\empty";
         tracerstarttime = 0;
         airfriction = -0.011;
         deflecting = 45;
@@ -43,7 +43,7 @@ class cfgAmmo {
     };
     class rhs_B_762x54_7N1_Ball;    
     class TMR_MedFrag : rhs_B_762x54_7N1_Ball {
-        model = "";
+        model = "\A3\Weapons_f\empty";
         tracerstarttime = 0;
         airfriction = -0.018;
         deflecting = 45;
@@ -66,7 +66,7 @@ class cfgAmmo {
         tmr_blastfrag_fragVelocity = 2169;
         tmr_blastfrag_fragCount = 45;
         tmr_blastfrag_casualtyRadius = 5;
-        tmr_blastfrag_livetime = 19;
+        tmr_blastfrag_liveTime = 17;
     };
     class GrenadeHand : Grenade {
         tmr_blastfrag_isFrag = 1;
@@ -94,7 +94,7 @@ class cfgAmmo {
         tmr_blastfrag_fragCount = 20;
         tmr_blastfrag_casualtyRadius = 6;
         tmr_blastfrag_fragMaxSize = "tiny";
-        tmr_blastfrag_livetime = 19;
+        tmr_blastfrag_liveTime = 17;
     };    
     class rhs_ammo_3of_base;
     class rhs_ammo_3UOF17: rhs_ammo_3of_base
@@ -130,7 +130,7 @@ class cfgAmmo {
         tmr_blastfrag_fragCount = 20;
         tmr_blastfrag_casualtyRadius = 7;
         tmr_blastfrag_fragMaxSize = "tiny";
-        tmr_blastfrag_livetime = 19;
+        tmr_blastfrag_liveTime = 17;
     };
     class rhs_rpg7v2_pg7vl;
     class rhs_rpg7v2_tbg7v : rhs_rpg7v2_pg7vl {

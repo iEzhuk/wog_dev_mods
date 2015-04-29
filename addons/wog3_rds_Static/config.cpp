@@ -2,7 +2,6 @@
 
 #define _ARMA_
 
-
 class CfgPatches
 {
 	class wog3_rds_Static

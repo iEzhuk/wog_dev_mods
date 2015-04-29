@@ -18,7 +18,7 @@ class CfgMagazines
     class VehicleMagazine;
 	class RDS_6Rnd_TOW_HMMWV: VehicleMagazine
 	{
-		ammo = "rhs_ammo_TOW_AT";
+		ammo = "rhs_ammo_TOW2_AT";
 	};
 	class RDS_6Rnd_TOW2: VehicleMagazine
 	{

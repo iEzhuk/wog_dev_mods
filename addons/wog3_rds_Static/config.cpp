@@ -18,16 +18,16 @@ class CfgMagazines
     class VehicleMagazine;
 	class RDS_6Rnd_TOW_HMMWV: VehicleMagazine
 	{
-		ammo = "rhs_ammo_TOW_AT";
+		ammo = "rhs_ammo_TOW2_AT";
 	};
 	class RDS_6Rnd_TOW2: VehicleMagazine
 	{
-		ammo = "rhs_ammo_TOW_AT";
+		ammo = "rhs_ammo_TOW2_AT";
 	};
 	class RDS_6Rnd_AT13: VehicleMagazine
 	{
 
-		ammo="rhs_mag_9m113_3";
+		ammo = "rhs_ammo_9m113";
 
 	};
 	class RDS_29Rnd_30mm_AGS30: VehicleMagazine
@@ -73,5 +73,14 @@ class CfgMagazines
 
 	};
 };
+class cfgweapons
+{
+class missiles_titan;
+	class RDS_AT13LauncherSingle: missiles_titan
+	{
 
+		canLock = 0;
+
+	};
+};
 //};

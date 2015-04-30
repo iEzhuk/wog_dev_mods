@@ -32,7 +32,7 @@ if (count _this > 3 && {_this select 3}) exitWith {
   _vehicle setHitPointDamage [_selection, _damage];
 };
 
-if !(_selection in ALL_HITPOINTS) exitWith {
+if !(_selection in HITPOINTS_ALL) exitWith {
   _vehicle setHitPointDamage [_selection, _damage];
 };
 
@@ -42,7 +42,7 @@ _hitPoints = [];
   if (isNil "_damageHitPoint") then {_damageHitPoint = 0};
 
   _hitPoints set [_forEachIndex, _damageHitPoint];
-} forEach ALL_HITPOINTS;
+} forEach HITPOINTS_ALL;
 
 _damageOld = damage _vehicle;
 _damageSumOld = 0;
@@ -51,14 +51,14 @@ _damageSumOld = 0;
 } forEach _hitPoints;
 _damageSumOld = _damageSumOld max 0.001;
 
-_hitPoints set [ALL_HITPOINTS find _selection, _damage];
+_hitPoints set [HITPOINTS_ALL find _selection, _damage];
 
 _damageSumNew = 0;
 {
   _damageSumNew = _damageSumNew + _x;
 } forEach _hitPoints;
 
-_damageNew = _damageSumNew / count ALL_HITPOINTS;
+_damageNew = _damageSumNew / count HITPOINTS_ALL;
 if (_damageOld > 0) then {
   _damageNew = _damageOld * (_damageSumNew / _damageSumOld);
 };
@@ -67,4 +67,4 @@ _vehicle setDamage _damageNew;
 
 {
   _vehicle setHitPointDamage [_x, _hitPoints select _forEachIndex];
-} forEach ALL_HITPOINTS;
+} forEach HITPOINTS_ALL;

@@ -10,6 +10,12 @@ _isEngineer = [player] call AGM_Core_fnc_isEngineer;
 
 //New time calculation from repair module
 _time = AGM_Repair_TimeRepair;
+if (_part == "HitEngine") then {
+	// Increase reapair time of Engine if have only ToolKit 
+	if (("ToolKit" in items player) && isNull ([_vehicle] call AGM_Repair_fnc_getNearestRepairer)) then {
+		_time = _time*1.6;
+	};
+};
 _time = _time + AGM_Repair_TimeRepair * (_vehicle getHitPointDamage _part);
 if !(_isEngineer) then {_time = _time + 0.5 * AGM_Repair_TimeRepair};
 

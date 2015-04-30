@@ -4,7 +4,7 @@
 
 #include <Macros.hqf>
 
-private ["_vehicle", "_displayName", "_string", "_height", "_damage", "_name"];
+private ["_vehicle", "_displayName", "_string", "_height", "_damage", "_name", "_parts"];
 
 _vehicle = _this select 0;
 
@@ -12,6 +12,12 @@ _displayName = getText (configFile >> "CfgVehicles" >> typeOf _vehicle >> "displ
 
 _string = format ["<t align='center' size='0.8'>%1<br/><br/>", format [localize "STR_AGM_Repair_VehicleName", _displayName]];
 _height = 1;
+
+_parts = switch (true) do {
+	case (!isNull ([_vehicle] call AGM_Repair_fnc_getNearestRepairer)): {HITPOINTS_ALL};
+	case ("ToolKit" in items player) : {HITPOINTS_TOOLKIT}; 
+	default {HITPOINTS_FIELD};
+};
 
 {
 	_damage = floor (3 * (_vehicle getHitPointDamage _x));
@@ -21,7 +27,7 @@ _height = 1;
 		_string = _string + format [localize (["STR_AGM_Repair_HitPointDamaged", "STR_AGM_Repair_HitPointDamagedHeavy", "STR_AGM_Repair_HitPointDestroyed"] select (_damage - 1)), _name] + "<br/>";
 		_height = _height + 0.25;
 	};
-} forEach ALL_HITPOINTS;
+} forEach _parts;
 
 if (_height == 1) then {
 	_string = _string + localize "STR_AGM_Repair_Nothing";

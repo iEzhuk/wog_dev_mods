@@ -1,17 +1,20 @@
 
-#define ALL_HITPOINTS [ \
+#define HITPOINTS_FIELD [ \
+  "HitFuel", \
+  "HitLTrack", "HitRTrack", \
+  "HitLFWheel", "HitRFWheel", "HitLF2Wheel", "HitRF2Wheel", "HitLMWheel", "HitRMWheel", "HitLBWheel", "HitRBWheel" \
+]
+
+#define HITPOINTS_TOOLKIT [ 
+  "HitLTrack", "HitRTrack", \
+  "HitLFWheel", "HitRFWheel", "HitLF2Wheel", "HitRF2Wheel", "HitLMWheel", "HitRMWheel", "HitLBWheel", "HitRBWheel", \
+  "HitFuel", "HitEngine" \
+]
+
+#define HITPOINTS_ALL [ \
   "HitBody", "HitHull", "HitEngine", "HitFuel", \
   "HitTurret", "HitGun", \
   "HitLTrack", "HitRTrack", \
   "HitLFWheel", "HitRFWheel", "HitLF2Wheel", "HitRF2Wheel", "HitLMWheel", "HitRMWheel", "HitLBWheel", "HitRBWheel", \
   "HitAvionics", "HitHRotor", "HitVRotor", "HitWinch" \
-]
-
-#define ALL_HITPOINTS_GLASS [ \
-  "HitBody", "HitHull", "HitEngine", "HitFuel", \
-  "HitTurret", "HitGun", \
-  "HitLTrack", "HitRTrack", \
-  "HitLFWheel", "HitRFWheel", "HitLF2Wheel", "HitRF2Wheel", "HitLMWheel", "HitRMWheel", "HitLBWheel", "HitRBWheel", \
-  "HitAvionics", "HitHRotor", "HitVRotor", \
-  "HitRGlass", "HitLGlass", "HitGlass1", "HitGlass2", "HitGlass3", "HitGlass4", "HitGlass5", "HitGlass6" \
 ]

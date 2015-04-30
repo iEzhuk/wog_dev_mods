@@ -1,0 +1,91 @@
+ 	class o_recon_TL_F;
+	class o_recon_M_F;
+	class o_recon_LAT_F;
+	class o_recon_exp_F;
+	class o_recon_medic_F;
+	class o_recon_JTAC_F;
+	
+	class wog_msv_sf_LAT_F: o_recon_LAT_F {
+	vehicleClass = "WOG_Russia_sf_Pixel";
+	faction = "wog_Russia_msv";
+	uniformClass = "rhs_uniform_emr_patchless";
+	linkedItems[] = {"H_Bandanna_khk_hs","rhs_6sh92_digi_radio","ItemMap","ItemGPS","ItemCompass","ItemWatch","ItemRadio"};
+	respawnLinkedItems[] = {"H_Bandanna_khk_hs","rhs_6sh92_digi_radio","ItemMap","ItemGPS","ItemCompass","ItemWatch","ItemRadio"};
+	Items[] = {"FirstAidKit","NVGoggles_INDEP","optic_ACO_grn","rhs_acc_dtk4short","rhs_acc_pgo7v","rhs_acc_1pn93_2"};
+	RespawnItems[] = {"FirstAidKit","NVGoggles_INDEP","optic_ACO_grn","rhs_acc_dtk4short","rhs_acc_pgo7v","rhs_acc_1pn93_2"};
+	weapons[] = {"rhs_weap_ak74m_camo_npz","rhs_weap_rpg7","Throw","Put"};
+	respawnWeapons[] = {"rhs_weap_ak74m_camo_npz","rhs_weap_rpg7","Throw","Put"};
+	magazines[] = {"rhs_45Rnd_545X39_AK","rhs_30Rnd_545x39_AK_no_tracers","rhs_30Rnd_545x39_AK_no_tracers","rhs_mag_rdg2_white","rhs_mag_rgd5","rhs_rpg7_OG7V_mag"};
+	respawnMagazines[] = {"rhs_45Rnd_545X39_AK","rhs_30Rnd_545x39_AK_no_tracers","rhs_30Rnd_545x39_AK_no_tracers","rhs_mag_rdg2_white","rhs_mag_rgd5","rhs_rpg7_OG7V_mag"};
+	backpack = "rhs_rpg";
+	};
+	class wog_msv_sf_TL_F: o_recon_TL_F {
+	vehicleClass = "WOG_Russia_sf_Pixel";
+	faction = "wog_Russia_msv";
+	uniformClass = "rhs_uniform_emr_patchless";
+	linkedItems[] = {"rhs_fieldcap_digi","rhs_6sh92_headset","ItemMap","ItemGPS","ItemCompass","ItemWatch","ItemRadio"};
+	respawnLinkedItems[] = {"rhs_fieldcap_digi","rhs_6sh92_headset","ItemMap","ItemGPS","ItemCompass","ItemWatch","ItemRadio"};
+	Items[] = {"FirstAidKit","NVGoggles_INDEP","optic_MRCO","rhs_acc_dtk4short"};
+	RespawnItems[] = {"FirstAidKit","NVGoggles_INDEP","optic_MRCO","rhs_acc_dtk4short"};
+	weapons[] = {"rhs_weap_ak74m_camo_npz","Throw","Put","Binocular"};
+	respawnWeapons[] = {"rhs_weap_ak74m_camo_npz","Throw","Put","Binocular"};
+	magazines[] = {"rhs_45Rnd_545X39_AK","rhs_30Rnd_545x39_AK_no_tracers","rhs_30Rnd_545x39_AK_no_tracers","rhs_30Rnd_545x39_AK_no_tracers","rhs_mag_rdg2_white","rhs_mag_rdg2_white","rhs_mag_rdg2_white","rhs_mag_rgd5","rhs_mag_rgd5"};
+	respawnMagazines[] = {"rhs_45Rnd_545X39_AK","rhs_30Rnd_545x39_AK_no_tracers","rhs_30Rnd_545x39_AK_no_tracers","rhs_30Rnd_545x39_AK_no_tracers","rhs_mag_rdg2_white","rhs_mag_rdg2_white","rhs_mag_rdg2_white","rhs_mag_rgd5","rhs_mag_rgd5"};
+	backpack="tf_mr3000_rhs";
+	};
+	class wog_msv_sf_exp_F: o_recon_exp_F{
+	vehicleClass = "WOG_Russia_sf_Pixel";
+	faction = "wog_Russia_msv";
+	uniformClass = "rhs_uniform_emr_patchless";
+	linkedItems[] = {"rhs_Booniehat_digi","rhs_6sh92_digi_radio","ItemMap","ItemGPS","ItemCompass","ItemWatch","ItemRadio","ItemRadio"};
+	respawnLinkedItems[] = {"rhs_Booniehat_digi","rhs_6sh92_digi_radio","ItemMap","ItemGPS","ItemCompass","ItemWatch","ItemRadio","ItemRadio"};
+	Items[] = {"FirstAidKit","NVGoggles_INDEP","rhs_acc_1p63","rhs_acc_dtk4short","AGM_Clacker","AGM_DefusalKit"};
+	RespawnItems[] = {"FirstAidKit","NVGoggles_INDEP","rhs_acc_1p63","rhs_acc_dtk4short","AGM_Clacker","AGM_DefusalKit"};
+	weapons[] = {"rhs_weap_ak74m_camo","Throw","Put"};
+	respawnWeapons[] = {"rhs_weap_ak74m_camo","Throw","Put"};
+	magazines[] = {"rhs_45Rnd_545X39_AK","rhs_30Rnd_545x39_AK_no_tracers","rhs_30Rnd_545x39_AK_no_tracers","rhs_30Rnd_545x39_AK_no_tracers","rhs_mag_rdg2_white","rhs_mag_rdg2_white","rhs_mag_rgd5"};
+	respawnMagazines[] = {"rhs_45Rnd_545X39_AK","rhs_30Rnd_545x39_AK_no_tracers","rhs_30Rnd_545x39_AK_no_tracers","rhs_30Rnd_545x39_AK_no_tracers","rhs_mag_rdg2_white","rhs_mag_rdg2_white","rhs_mag_rgd5"};
+	backpack="B_Carryall_oli_mine";
+	};
+	class wog_msv_sf_M_F: o_recon_M_F{
+	vehicleClass = "WOG_Russia_sf_Pixel";
+	faction = "wog_Russia_msv";
+	uniformClass = "rhs_uniform_emr_patchless";
+	linkedItems[] = {"H_Watchcap_khk","rhs_6sh92_digi_radio","ItemMap","ItemGPS","ItemCompass","ItemWatch","ItemRadio"};
+	respawnLinkedItems[] = {"H_Watchcap_khk","rhs_6sh92_digi_radio","ItemMap","ItemGPS","ItemCompass","ItemWatch","ItemRadio"};
+	Items[] = {"FirstAidKit","NVGoggles_INDEP","rhs_acc_tgpv","rhs_acc_pso1m2"};
+	RespawnItems[] = {"FirstAidKit","NVGoggles_INDEP","rhs_acc_tgpv","rhs_acc_pso1m2"};
+	weapons[] = {"rhs_weap_svdp_wd","Throw","Put","Binocular"};
+	respawnWeapons[] = {"rhs_weap_svdp_wd","Throw","Put","Binocular"};
+	magazines[] = {"rhs_10Rnd_762x54mmR_7N1","rhs_10Rnd_762x54mmR_7N1","rhs_10Rnd_762x54mmR_7N1","rhs_10Rnd_762x54mmR_7N1","rhs_10Rnd_762x54mmR_7N1","rhs_10Rnd_762x54mmR_7N1","rhs_10Rnd_762x54mmR_7N1","rhs_10Rnd_762x54mmR_7N1","rhs_10Rnd_762x54mmR_7N1","rhs_mag_rdg2_white","rhs_mag_rdg2_white","rhs_mag_rdg2_white","rhs_mag_rgd5","rhs_mag_rgd5"};
+	respawnMagazines[] = {"rhs_10Rnd_762x54mmR_7N1","rhs_10Rnd_762x54mmR_7N1","rhs_10Rnd_762x54mmR_7N1","rhs_10Rnd_762x54mmR_7N1","rhs_10Rnd_762x54mmR_7N1","rhs_10Rnd_762x54mmR_7N1","rhs_10Rnd_762x54mmR_7N1","rhs_10Rnd_762x54mmR_7N1","rhs_10Rnd_762x54mmR_7N1","rhs_mag_rdg2_white","rhs_mag_rdg2_white","rhs_mag_rdg2_white","rhs_mag_rgd5","rhs_mag_rgd5"};
+	backpack="B_AssaultPack_khk";
+	};
+	class wog_msv_sf_medic_F: o_recon_medic_F{
+	vehicleClass = "WOG_Russia_sf_Pixel";
+	faction = "wog_Russia_msv";
+	uniformClass = "rhs_uniform_emr_patchless";
+	linkedItems[] = {"rhs_Booniehat_digi","rhs_6sh92_headset","ItemMap","ItemGPS","ItemCompass","ItemWatch","ItemRadio"};
+	respawnLinkedItems[] = {"rhs_Booniehat_digi","rhs_6sh92_headset","ItemMap","ItemGPS","ItemCompass","ItemWatch","ItemRadio"};
+	Items[] = {"FirstAidKit","NVGoggles_INDEP","rhs_acc_1p63","rhs_acc_dtk4short"};
+	RespawnItems[] = {"FirstAidKit","NVGoggles_INDEP","rhs_acc_1p63","rhs_acc_dtk4short"};
+	weapons[] = {"rhs_weap_ak74m_camo","Throw","Put"};
+	respawnWeapons[] = {"rhs_weap_ak74m_camo","Throw","Put"};
+	magazines[] = {"rhs_45Rnd_545X39_AK","rhs_30Rnd_545x39_AK_no_tracers","rhs_30Rnd_545x39_AK_no_tracers","rhs_30Rnd_545x39_AK_no_tracers","rhs_mag_rdg2_white","rhs_mag_rdg2_white","rhs_mag_rdg2_white","rhs_mag_rgd5","rhs_mag_rgd5"};
+	respawnMagazines[] = {"rhs_45Rnd_545X39_AK","rhs_30Rnd_545x39_AK_no_tracers","rhs_30Rnd_545x39_AK_no_tracers","rhs_30Rnd_545x39_AK_no_tracers","rhs_mag_rdg2_white","rhs_mag_rdg2_white","rhs_mag_rdg2_white","rhs_mag_rgd5","rhs_mag_rgd5"};
+	backpack = "rhs_assault_umbts_medic";
+	};
+	class wog_msv_sf_JTAC_F: o_recon_JTAC_F{
+	vehicleClass = "WOG_Russia_sf_Pixel";
+	faction = "wog_Russia_msv";
+	uniformClass = "rhs_uniform_emr_patchless";
+	linkedItems[] = {"H_Bandanna_khk_hs","rhs_6sh92_digi_vog_headset","ItemMap","ItemGPS","ItemCompass","ItemWatch","ItemRadio"};
+	respawnLinkedItems[] = {"H_Bandanna_khk_hs","rhs_6sh92_digi_vog_headset","ItemMap","ItemGPS","ItemCompass","ItemWatch","ItemRadio"};
+	Items[] = {"FirstAidKit","NVGoggles_INDEP","RH_eotech553","rhs_acc_dtk4short"};
+	RespawnItems[] = {"FirstAidKit","NVGoggles_INDEP","RH_eotech553","rhs_acc_dtk4short"};
+	weapons[] = {"rhs_weap_ak74m_gp25_npz","Throw","Put","Laserdesignator_02"};
+	respawnWeapons[] = {"rhs_weap_ak74m_gp25_npz","Throw","Put","Laserdesignator_02"};
+	magazines[] = {"rhs_45Rnd_545X39_AK","rhs_30Rnd_545x39_AK_no_tracers","rhs_30Rnd_545x39_AK_no_tracers","rhs_30Rnd_545x39_AK_no_tracers","rhs_30Rnd_545x39_AK_no_tracers","rhs_mag_rdg2_white","rhs_mag_rdg2_white","rhs_mag_rdg2_white","rhs_mag_rgd5","rhs_mag_rgd5","Laserbatteries","Laserbatteries"};
+	respawnMagazines[] = {"rhs_45Rnd_545X39_AK","rhs_30Rnd_545x39_AK_no_tracers","rhs_30Rnd_545x39_AK_no_tracers","rhs_30Rnd_545x39_AK_no_tracers","rhs_30Rnd_545x39_AK_no_tracers","rhs_30Rnd_545x39_AK_no_tracers","rhs_30Rnd_545x39_AK_no_tracers","rhs_30Rnd_545x39_AK_no_tracers","rhs_mag_rdg2_white","rhs_mag_rdg2_white","rhs_mag_rdg2_white","rhs_mag_rgd5","rhs_mag_rgd5","Laserbatteries","Laserbatteries"};
+	backpack="B_AssaultPack_khk_VOG25"
+	};

@@ -38,39 +38,31 @@ class CfgVehicleClasses
 {
 	class WOG_US_Army_ocp
 	{
-	displayName = "Люди (ocp)";
+		displayName = "Люди (ocp)";
 	};
-	class WOG_US_Army_ucp
+		class WOG_US_Army_ucp
 	{
-	displayName = "Люди (ucp)";
+		displayName = "Люди (ucp)";
 	};
-	class WOG_US_Army_sf_ucp
+		class WOG_Russia_Flora
 	{
-	displayName = "Люди (Разведка)";
+		displayName = "Люди (флора)";
 	};
-	class WOG_Russia_Flora
+		class WOG_Russia_Pixel
 	{
-	displayName = "Люди (флора)";
+		displayName = "Люди (ЕМР)";
 	};
-	class WOG_Russia_Pixel
+		class WOG_Russia_mflora
 	{
-	displayName = "Люди (ЕМР)";
+		displayName = "Люди (Горная флора)";
 	};
-	class WOG_Russia_sf_Pixel
+		class WOG_guer_vc
 	{
-	displayName = "Люди (Разведка)";
+		displayName = "Люди (Пустыня)";
 	};
-	class WOG_Russia_mflora
+		class WOG_guer_wd_vc
 	{
-	displayName = "Люди (Горная флора)";
-	};
-	class WOG_guer_vc
-	{
-	displayName = "Люди (Пустыня)";
-	};
-	class WOG_guer_wd_vc
-	{
-	displayName = "Люди (Лес)";
+		displayName = "Люди (Лес)";
 	};
 
 };
@@ -79,10 +71,8 @@ class cfgVehicles
 #include "backpacks.hpp"
 #include "wog_us_army_ucp.hpp"
 #include "wog_us_army_ocp.hpp"
-#include "wog_us_army_sf_ocp.hpp"
 #include "wog_msv_flora.hpp"
 #include "wog_msv_emr.hpp"
-#include "wog_msv_sf_emr.hpp"
 #include "wog_msv_mflora.hpp"
 #include "wog_vdv_pixel.hpp"
 //#include "wog_Insurgency.hpp"

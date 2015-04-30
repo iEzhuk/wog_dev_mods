@@ -1339,10 +1339,11 @@ class CfgWeapons {
 };
 
 class AGM_Parameters_Numeric {
-  AGM_Repair_TimeRepair = 10;
-  AGM_Repair_TimeWheelRepair = 10;
-  AGM_Repair_TimeTrackRepair = 10;
-  AGM_Repair_MaxDamageRepair = 0;
+  AGM_Repair_TimeRepair = 240;
+  AGM_Repair_TimeEngineToolkit = 300;
+  AGM_Repair_TimeWheelRepair = 120;
+  AGM_Repair_TimeTrackRepair = 180;
+  AGM_Repair_MaxDamageRepair = 0.3;
 };
 
 #include <DiagnoseDialog.hpp>

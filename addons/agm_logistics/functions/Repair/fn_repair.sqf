@@ -13,7 +13,7 @@ _time = AGM_Repair_TimeRepair;
 if (_part == "HitEngine") then {
 	// Increase reapair time of Engine if have only ToolKit 
 	if (("ToolKit" in items player) && isNull ([_vehicle] call AGM_Repair_fnc_getNearestRepairer)) then {
-		_time = _time*1.6;
+		_time = AGM_Repair_TimeEngineToolkit;
 	};
 };
 _time = _time + AGM_Repair_TimeRepair * (_vehicle getHitPointDamage _part);

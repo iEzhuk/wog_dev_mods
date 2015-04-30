@@ -5,14 +5,14 @@
   "HitLFWheel", "HitRFWheel", "HitLF2Wheel", "HitRF2Wheel", "HitLMWheel", "HitRMWheel", "HitLBWheel", "HitRBWheel" \
 ]
 
-#define HITPOINTS_TOOLKIT [ 
+#define HITPOINTS_TOOLKIT [ \
   "HitLTrack", "HitRTrack", \
   "HitLFWheel", "HitRFWheel", "HitLF2Wheel", "HitRF2Wheel", "HitLMWheel", "HitRMWheel", "HitLBWheel", "HitRBWheel", \
   "HitFuel", "HitEngine" \
 ]
 
 #define HITPOINTS_ALL [ \
-  "HitBody", "HitHull", "HitEngine", "HitFuel", \
+  "HitEngine", "HitFuel", \
   "HitTurret", "HitGun", \
   "HitLTrack", "HitRTrack", \
   "HitLFWheel", "HitRFWheel", "HitLF2Wheel", "HitRF2Wheel", "HitLMWheel", "HitRMWheel", "HitLBWheel", "HitRBWheel", \

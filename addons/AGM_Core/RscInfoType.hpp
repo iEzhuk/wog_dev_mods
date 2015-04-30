@@ -21,7 +21,3 @@ class RscInGameUI {
 class RscDisplayInventory {
 	onLoad = "[""onLoad"",_this,""RscDisplayInventory"",'IGUI'] call compile preprocessfilelinenumbers ""A3\ui_f\scripts\initDisplay.sqf""; {_this call _x} forEach ((missionNamespace getVariable ['AGM_onLoadInventory', [-1, [], []]]) select 2);";
 };
-
-class RscDisplayChannel {
-  onLoad = "_this call AGM_Core_fnc_onLoadRscDisplayChannel;";
-};

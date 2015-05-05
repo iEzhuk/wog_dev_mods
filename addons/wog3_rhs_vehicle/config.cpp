@@ -13,12 +13,11 @@ class CfgPatches
 
 class CfgVehicles
 {
-#include "del_vehicle.hpp"
 class APC_Tracked_03_base_F;
 class RHS_M2A2_Base: APC_Tracked_03_base_F
 	{
 		radarType = 8;
-
+		
 	};
 class Heli_Transport_02_base_F;
 class RHS_CH_47F_base: Heli_Transport_02_base_F
@@ -51,6 +50,7 @@ class RHS_AH64_base: Heli_Attack_01_base_F
 		irScanRangeMin = 100;
 		irScanGround = false;
 		irScanToEyeFactor = 1;
+		
 	};
 class Heli_Attack_02_base_F;
 class RHS_Ka52_base: Heli_Attack_02_base_F
@@ -59,6 +59,7 @@ class RHS_Ka52_base: Heli_Attack_02_base_F
 		irScanRangeMin = 100;
 		irScanGround = false;
 		irScanToEyeFactor = 1;
+		
 	};
 class Heli_Light_02_base_F;
 class RHS_Mi8_base: Heli_Light_02_base_F
@@ -73,7 +74,11 @@ class RHS_AH1Z_base: Heli_Attack_01_base_F
 		irScanGround = false;
 		irScanToEyeFactor = 1;
 		radarType = 8;
+		
 	};
+
+#include "del_vehicle.hpp"
+
 };
 
 class cfgWeapons

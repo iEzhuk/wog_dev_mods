@@ -33,7 +33,7 @@ class CfgMagazines
 	class RDS_29Rnd_30mm_AGS30: VehicleMagazine
 	{
 
-		ammo="64Rnd_40mm_G_belt";
+		ammo="rhs_g_vog25";
 
 	};
 	class RDS_150Rnd_127x107_DSHKM: VehicleMagazine

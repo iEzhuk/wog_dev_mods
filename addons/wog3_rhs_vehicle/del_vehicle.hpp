@@ -330,7 +330,24 @@ class rhsusf_M1078A1P2_wd_fmtv_usarmy: rhsusf_fmtv_base
 	{
 		scope = 0;
 	};
-		class rhsusf_M1078A1P2_B_M2_wd_flatbed_fmtv_usarmy: rhsusf_fmtv_base
+	class rhsusf_M1078A1P2_B_M2_wd_flatbed_fmtv_usarmy: rhsusf_fmtv_base
+	{
+		scope = 0;
+	};
+	class rhs_bmp3tank_base;
+	class rhs_bmp3_msv: rhs_bmp3tank_base
+	{
+		scope = 0;
+	};
+	class rhs_bmp3_late_msv: rhs_bmp3tank_base
+	{
+		scope = 0;
+	};
+	class rhs_bmp3mera_msv: rhs_bmp3tank_base
+	{
+		scope = 0;
+	};
+	class rhs_bmp3m_msv: rhs_bmp3tank_base
 	{
 		scope = 0;
 	};

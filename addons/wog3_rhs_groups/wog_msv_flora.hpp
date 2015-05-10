@@ -22,6 +22,9 @@
 	class rhs_msv_crew_commander;
     class rhs_msv_armoredcrew;
 	class O_soldier_exp_F;
+	class rhs_pilot;
+	class rhs_pilot_combat_heli;
+	class rhs_pilot_transport_heli;
 
 	
 
@@ -148,5 +151,19 @@
 	linkedItems[] = {"rhs_tsh4_ess","rhs_6b23","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 	respawnLinkedItems[] = {"rhs_tsh4_ess","rhs_6b23","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 	};
-
+	class wog_pilot: rhs_pilot {
+	vehicleClass = "WOG_pilot";
+	faction = "wog_Russia_msv";
+	AGM_GForceCoef = 0.55;
+	};
+	class wog_pilot_combat_heli: rhs_pilot_combat_heli {
+	vehicleClass = "WOG_pilot";
+	faction = "wog_Russia_msv";
+	AGM_GForceCoef = 0.55;
+	};
+	class wog_pilot_transport_heli: rhs_pilot_transport_heli {
+	vehicleClass = "WOG_pilot";
+	faction = "wog_Russia_msv";
+	AGM_GForceCoef = 0.55;
+	};
 	

@@ -60,6 +60,10 @@ class CfgVehicleClasses
 	{
 	displayName = "Люди (Разведка)";
 	};
+	class WOG_pilot
+	{
+	displayName = "Люди (пилоты)";
+	};
 	class WOG_Russia_mflora
 	{
 	displayName = "Люди (Горная флора)";

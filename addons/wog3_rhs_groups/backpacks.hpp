@@ -1,6 +1,7 @@
 ﻿class rhsusf_assault_eagleaiii_ucp;
 class rhsusf_assault_eagleaiii_ocp;
 class B_AssaultPack_khk;
+class B_AssaultPack_Base;
 class B_Carryall_oli;
 class rhsusf_assault_eagleaiii_ucp_m3 : rhsusf_assault_eagleaiii_ucp
 {
@@ -69,5 +70,21 @@ class B_Carryall_oli_mine : B_Carryall_oli
 			count = 2;
 		};
 
+	};
+};
+class rhs_rpg : B_AssaultPack_Base
+{
+	class TransportMagazines
+	{
+		class _xx_rhs_rpg7_OG7V_mag
+		{
+			magazine = "rhs_rpg7_OG7V_mag";
+			count = 2;
+		};
+		class _xx_NLAW_F
+		{
+			magazine = "rhs_rpg7_PG7VL_mag";
+			count = 2;
+		};
 	};
 };

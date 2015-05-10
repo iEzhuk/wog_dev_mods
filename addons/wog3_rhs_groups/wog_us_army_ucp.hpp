@@ -121,6 +121,7 @@
 	vehicleClass = "WOG_US_Army_ucp";
 	faction = "wog_US_Army";
 	uniformClass = "rhs_uniform_cu_ucp";
+	AGM_GForceCoef = 0.55;
 	};
 		class wog_army_ucp_helicrew: rhsusf_army_ucp_helicrew {
 	vehicleClass = "WOG_US_Army_ucp";

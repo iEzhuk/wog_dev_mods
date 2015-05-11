@@ -14,7 +14,7 @@
  * Damage value to be inflicted (optional)
  */
 
-#define UNCONSCIOUSNESSTRESHOLD 0.6
+#define UNCONSCIOUSNESSTRESHOLD 0.45
 
 #define PAINKILLERTRESHOLD 0.1
 #define PAINLOSS 0.0001

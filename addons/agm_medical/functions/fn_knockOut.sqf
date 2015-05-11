@@ -35,9 +35,11 @@ _unit setVariable ["AGM_Unconscious", True, True]; // deprecated since 0.95
 _unit setVariable ["AGM_isUnconscious", True, True];
 _unit setVariable ["AGM_canTreat", False, True];
 
-// _unit setVariable ["tf_globalVolume", 0.4];
+_unit setVariable ["tf_globalVolume", 0.4];
 // _unit setVariable ["tf_voiceVolume", 0, True];
 _unit setVariable ["tf_unable_to_use_radio", True, True];
+TF_speak_volume_level = "normal";
+TF_speak_volume_meters = 20;
 
 _unit setVariable ["acre_sys_core_isDisabled", True, True];
 _unit setVariable ["acre_sys_core_globalVolume", 0.4];

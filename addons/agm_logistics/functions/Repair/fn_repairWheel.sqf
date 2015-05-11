@@ -10,8 +10,8 @@ _isEngineer = [player] call AGM_Core_fnc_isEngineer;
 
 //New time calculation from repair module
 _time = AGM_Repair_TimeWheelRepair;
-_time = _time + AGM_Repair_TimeWheelRepair * (_vehicle getHitPointDamage _part);
-if !(_isEngineer) then {_time = _time + 0.5 * AGM_Repair_TimeWheelRepair};
+
+if (_isEngineer) then {_time = _time * 0.6};
 
 [player, "AinvPknlMstpSnonWnonDr_medic5", 0] call AGM_Core_fnc_doAnimation;
 

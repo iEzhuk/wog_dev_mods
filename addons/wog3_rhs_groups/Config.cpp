@@ -130,7 +130,7 @@ class cfgweapons {
 		class LinkedItemsOptic
 		{
 			slot = "CowsSlot";
-			item = "RH_m145";
+			item = "RH_eotech553";
 		};
 	};
 	};

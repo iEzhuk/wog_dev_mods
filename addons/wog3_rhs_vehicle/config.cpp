@@ -89,6 +89,7 @@ class Rhs_weap_stinger_Launcher: Rhs_weap_TOW_Launcher
 canLock = 2;
 weaponLockSystem = 0;
 weaponLockDelay = 3;
+reloadTime = 2;
 	};
 };
 class CfgAmmo

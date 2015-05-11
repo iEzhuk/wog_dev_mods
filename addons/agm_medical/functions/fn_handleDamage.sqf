@@ -89,16 +89,16 @@ if (diag_frameno > (_unit getVariable ["AGM_Medical_FrameNo", -3]) + 2) then {
   _unit setVariable ["AGM_Medical_HitPoints", []];
   _unit setVariable ["AGM_Medical_Damages", []];
   _unit setVariable ["AGM_Medical_PreventDeath", False];
-  if (([_unit] call AGM_Core_fnc_isPlayer) or _unit getVariable ["AGM_allowUnconscious", False]) then {
-    if (!(_unit getVariable ["AGM_isUnconscious", False]) and
-        {_unit getVariable ["AGM_Medical_PreventInstaDeath", AGM_Medical_PreventInstaDeath]}) then {
-      _unit setVariable ["AGM_Medical_PreventDeath", True];
-    };
-    if ((_unit getVariable ["AGM_isUnconscious", False]) and
-        {_unit getVariable ["AGM_Medical_PreventDeathWhileUnconscious", AGM_Medical_PreventDeathWhileUnconscious]}) then {
-      _unit setVariable ["AGM_Medical_PreventDeath", True];
-    };
+  
+  if (!(_unit getVariable ["AGM_isUnconscious", False]) and
+      {_unit getVariable ["AGM_Medical_PreventInstaDeath", AGM_Medical_PreventInstaDeath]}) then {
+    _unit setVariable ["AGM_Medical_PreventDeath", True];
   };
+  if ((_unit getVariable ["AGM_isUnconscious", False]) and
+      {_unit getVariable ["AGM_Medical_PreventDeathWhileUnconscious", AGM_Medical_PreventDeathWhileUnconscious]}) then {
+    _unit setVariable ["AGM_Medical_PreventDeath", True];
+  };
+  
 };
 
 _damage = _damage - _newDamage;
@@ -212,14 +212,9 @@ if (_selectionName == "" and
     _damage < 1 and
     !(_unit getVariable ["AGM_isUnconscious", False]
   )) then {
-  // random chance to kill AI instead of knocking them out, otherwise
-  // there'd be shittons of unconscious people after every firefight,
-  // causing executions. And nobody likes executions.
-  if (_unit getVariable ["AGM_allowUnconscious", ([_unit] call AGM_Core_fnc_isPlayer) or random 1 > 0.5]) then {
-    [_unit] call AGM_Medical_fnc_knockOut;
-  } else {
-    _damage = 1;
-  };
+
+  [_unit] call AGM_Medical_fnc_knockOut;
+
 };
 
 // Bleeding

@@ -68,7 +68,7 @@ AGM_Pain_CC ppEffectCommit 0;
       AGM_Unconscious_RB ppEffectEnable True;
       _blind = True;
       // Chane voice volume
-      if(TF_speak_volume_level!="normal" && player getVariable ["AGM_isUnconscious", false]) then {
+      if(TF_speak_volume_level!="normal") then {
         TF_speak_volume_level = "normal";
         TF_speak_volume_meters = 20;
         [parseText (format[localize "STR_voice_volume", localize "STR_voice_normal"]), 5] call TFAR_fnc_showHint;
@@ -153,11 +153,3 @@ AGM_Pain_CC ppEffectCommit 0;
     _damage = damage AGM_player;
   };
 };
-
-["TFAR_isUnconscious", "OnSpeak", {
-  if(TF_speak_volume_level!="normal" && player getVariable [AGM_isUnconscious, false]) then {
-    TF_speak_volume_level = "normal";
-    TF_speak_volume_meters = 20;
-    [parseText (format[localize "STR_voice_volume", localize "STR_voice_normal"]), 5] call TFAR_fnc_showHint;
-   };
-}, AGM_player] call TFAR_fnc_addEventHandler;

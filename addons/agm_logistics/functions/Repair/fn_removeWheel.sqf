@@ -7,9 +7,9 @@ _part = _this select 1;
 
 _isEngineer = [player] call AGM_Core_fnc_isEngineer;
 
-_time = 10;
-_time = _time + 10 * (_vehicle getHitPointDamage _part);
-if !(_isEngineer) then {_time = _time + 10};
+_time = AGM_Repair_TimeWheelRepair;
+
+if (_isEngineer) then {_time = _time * 0.6};;
 
 [player, "AinvPknlMstpSnonWnonDr_medic5", 0] call AGM_Core_fnc_doAnimation;
 

@@ -234,7 +234,7 @@ class RscDisplayClientGetReady: RscDisplayGetReady{
                 class ButtonPlayer: RscActiveText{
                     onbuttonclick = "";
                     color[] = {0,0,0,0};
-                    text =  "";
+                    text =  "\A3\ui_f\data\igui\cfg\actions\clear_empty_ca.paa";
                     colorText[] = {0,0,0,0};
                     colorActive[] = {0,0,0,0};
                     tooltip = "";
